@@ -1,0 +1,157 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+
+.app {
+  display:flex;
+  height: calc(100vh - 3.8rem);
+}
+
+.navbar {
+  height: 3.7rem;
+  border-bottom: 1px solid  lightgray;
+}
+
+.navbar-wrapper {
+  padding: 0.7rem 5rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.navbar-text {
+  margin:0;
+  padding:0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(109, 147, 181);
+}
+
+
+
+.navbar-items {
+  display:flex;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color:rgb(123, 152, 146);
+}
+
+
+
+.leftbar-wrapper {
+  padding: 2rem;
+}
+
+.form-item {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-item label {
+  font-size: 0.9rem;
+}
+
+.form-input {
+  margin-top: 0.7rem;
+  outline: none;
+}
+
+.form-item textarea {
+  margin-top: 0.8rem;
+  outline: none;
+  resize:none;
+  overflow: hidden;
+}
+
+.form-button {
+  padding: 0.3rem 0.78rem;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  transition: 0.25s;
+  background: aliceblue;
+  color: #1e6b7b;
+  font-size: 0.8rem;
+  border: 1px solid lightgray;
+}
+
+.rightbar {
+  border-left: 1px solid lightgray;
+}
+
+.rightbar-wrapper {
+  padding: 2rem 5rem;
+}
+
+.comment {
+  display:flex;
+  flex-direction: column;
+  word-break: break-all;
+}
+
+.comment span {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color:#6aafe6;
+}
+
+
+.remove {
+  padding: 0.3rem 0.5rem;
+  background-color: #f199bc;
+  color: #d4dfe6;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+@media screen and (max-width:980px) {
+  .navbar-wrapper {
+    padding: 0.7rem 2rem;
+  }
+
+  .navbar-item {
+    margin-right: 0.7rem;
+  }
+
+
+  .rightbar-wrapper {
+    padding: 1rem;
+  }
+
+  .form-input {
+    margin-top: 1.1rem;
+  }
+
+  .comment span {
+    font-size: 1rem;
+  }
+
+  .remove {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width:280px) {
+  .navbar-wrapper {
+    padding: 0.7rem 1rem;
+  }
+  .form-input {
+    margin-top: 1.2rem;
+  }
+}
